@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/ic_bg"
+        android:layout_height="match_parent"
+        tools:context=".startquiz">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/qeustion"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:textStyle="bold"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:id="@+id/image_flag"
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="190dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                     android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="8dp"
+                        android:progress="0"
+                        app:hideAnimationBehavior="inward"
+                        app:indicatorColor="#E91E63"
+                        app:trackColor="@color/white"
+                        app:indicatorDirectionLinear="startToEnd"
+                        android:id="@+id/question_progress"
+                        android:max="10"
+                        android:indeterminate="false"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="0/10"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+
+                        android:id="@+id/progress_counter"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:layout_weight=".2"
+                        android:layout_marginEnd="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#5E5E5E"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    android:id="@+id/answer1"
+                    app:cornerRadius="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="20dp"
+                    app:backgroundTint="@null"
+
+
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/answer2"
+
+                    android:textAlignment="center"
+                    android:textColor="#5E5E5E"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null"
+
+                    app:cornerRadius="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    app:backgroundTint="@null"
+                    android:id="@+id/answer3"
+
+
+                    android:textAlignment="center"
+                    android:textColor="#5E5E5E"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+
+
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="40dp"
+                    android:textAlignment="center"
+                    app:backgroundTint="@null"
+                    android:id="@+id/answer4"
+
+                    android:textColor="#5E5E5E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    app:cornerRadius="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="شروع"
+                    android:id="@+id/submit_answer"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+</layout>
